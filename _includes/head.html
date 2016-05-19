@@ -9,4 +9,30 @@
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+ <link href='https://fonts.googleapis.com/css?family=Volkhov:400,700' rel='stylesheet' type='text/css'>
+
+
+ <script>
+window.onscroll = function() {
+
+  var className = 'small';
+  var el = document.getElementById('site-header');
+
+  if (el.classList) {
+    if (window.scrollY > 100)
+      el.classList.add(className);
+    else
+      el.classList.remove(className);
+  } else {
+    // IE Fix
+    if (window.scrollY > 100)
+      el.className += className;
+    else
+      el.className = str.replace(new RegExp("\\b"+className+"\\b","gi"),"");
+  }
+}
+
+</script>
 </head>
+
+

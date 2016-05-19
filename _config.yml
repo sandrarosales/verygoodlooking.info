@@ -7,9 +7,9 @@
 
 # Site settings
 title: Very Good Looking
-email: info@holasandra.com
+email: sandrozza@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Experiments on the www by Sandra Rosales
+  Experiments on the www by web designer Sandra Rosales
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 
@@ -18,7 +18,9 @@ permalink: /:categories/:title
 
 links:
 - title: archive
-url: /arhive
+  url: /archive
+- title: about
+  url: /about
 
 # Build settings
 markdown: kramdown
