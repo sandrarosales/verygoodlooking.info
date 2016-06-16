@@ -1,5 +1,47 @@
 
 
 
+.wrapper {
+	width: 95%;
+	margin: 0 auto;
+
+}
+
+header .wrapper {
+	position: relative;
+}
+
+
+.site-title {
+	padding-top: 1em;
+	text-align: center;
+	margin: 0;
+}
+
+.site-nav {
+	position: absolute;
+	right: 1em;
+	top: 0;
+
+
+
+
+	li {
+		display: inline-block;
+	}
+
+	li:first-child {
+		padding-right: 1em;
+	}
+
+	a {
+		font-size: $small-font-size;
+	}
+
+}
+
+
+
+
 	
 
