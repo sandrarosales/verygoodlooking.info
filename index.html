@@ -8,12 +8,15 @@ layout: default
 
   <div class="post-list">
     {% for post in site.posts %}
-      <div class="post-item {{ post.slug }}">
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <div class="post-item {{ post.slug
+       }}">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        {% if post.categories contains "meta" %}
+       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    {% endif %}
+
+      {{ post.content }}
+        
       </div>
     {% endfor %}
   </div>
